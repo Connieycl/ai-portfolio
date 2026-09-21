@@ -1,1 +1,0 @@
-print("Hello, World! 我是汉语国际教育专业的学生！")
