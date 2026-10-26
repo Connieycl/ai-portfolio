@@ -5,7 +5,7 @@ import urllib.request
 
 # ================= 1. 密钥配置 =================
 # 请将下面的密钥替换为你自己的真实密钥
-DEEPSEEK_API_KEY = "sk-c4b905d8f3dd466091aa6e7ad1c17103"
+DEEPSEEK_API_KEY = ""
 
 # ================= 2. 基础配置 =================
 BASE_URL = "https://api.deepseek.com/v1/chat/completions"
