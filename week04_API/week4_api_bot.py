@@ -1,4 +1,4 @@
-# W4 命令行学科问答机器人（完整免安装版）
+# W4 命令行学科问答机器人
 import os
 import json
 import urllib.request
