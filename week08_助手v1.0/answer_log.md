@@ -1,5 +1,9 @@
 # 演示记录
 
+- **运行环境**：Windows + RTX 3050 显卡
+- **异常情况**：本地 Ollama 启动时触发严重的底层 CUDA 显存溢出报错（CUDA error: device kernel image is invalid）。切换云端回退后，DeepSeek 接口因余额不足（Error code: 402）拒绝请求。
+- **代码兜底表现**：由于 `assistant_v1.py` 中配置了严密的 `try/except` 异常捕获机制，程序并未因此直接崩溃退出，而是成功打印了“首选引擎失败，自动切换”的日志，验证了回退逻辑的有效性。
+- 
 ## 问题1：把字句的教学难点有哪些
 - **模式**：use_rag=True
 - **引擎**：prefer="local"（已配置双向回退）
